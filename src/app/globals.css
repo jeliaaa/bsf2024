@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +30,26 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+/* styles.css or globals.css or any appropriate CSS file */
+.menu-entering {
+  opacity: 0;
+  transform: translateY(-10%);
+}
+
+.menu-entered {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.menu-exited {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-exiting {
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: opacity 300ms, transform 300ms;
 }
